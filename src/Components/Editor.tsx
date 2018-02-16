@@ -43,6 +43,11 @@ const StyledDocumentSubmitButtom = styled.button`
     outline: none;
     background: #333A40;
     cursor: pointer;
+    transition: 0.2s;
+
+    &:active {
+        background: #495057;
+    }
 `;
 
 const StyledEditor = styled.div`
