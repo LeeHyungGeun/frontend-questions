@@ -30,7 +30,7 @@ type State = {
     editor: String;
 };
 class EditorContainer extends React.Component<Props, State> {
-    constructor(props: any) {
+    constructor(props: Props) {
         super(props);
         this.insertSpaceOnSelection = this.insertSpaceOnSelection.bind(this);
         this.handleChangeMarkdownEditor = this.handleChangeMarkdownEditor.bind(this);
