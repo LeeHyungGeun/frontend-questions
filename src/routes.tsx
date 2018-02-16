@@ -6,12 +6,15 @@ import {
     Redirect,
     Switch
 } from 'react-router-dom';
-import JavaScript from './containers/JavaScriptContainer';
-import NotFound from './containers/NotFoundContainer';
+import JavaScript from './Containers/JavaScriptContainer';
+import NotFound from './Containers/NotFoundContainer';
+import Editor from './Containers/EditorContainer';
 
 export default (
     <Switch>
+        <Route exact={true} path="/" component={JavaScript} />
         <Route exact={true} path="/JavaScript" component={JavaScript} />
+        <Route exact={true} path="/Editor" component={Editor} />
         <Route exact={true} path="/NotFound" component={NotFound} />
         <Redirect from="*" to="/NotFound" />
     </Switch>

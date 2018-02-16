@@ -1,5 +1,5 @@
 import * as React from 'react';
-import NotFound from '../components/NotFound';
+import NotFound from '../Components/NotFound';
 
 type Props = {};
 type State = {};

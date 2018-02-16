@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 class LayoutContainer extends React.Component {
     menus: Array<String> = [

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Navigation from '../components/Navigation';
+import Navigation from '../Components/Navigation';
 import styled from 'styled-components';
 
 type Props = {

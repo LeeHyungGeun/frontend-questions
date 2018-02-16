@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
     Question
 } from '../Models';
-import QuestionItem from '../components/QuestionItem';
+import QuestionItem from '../Components/QuestionItem';
 
 type Props = {};
 type State = {
