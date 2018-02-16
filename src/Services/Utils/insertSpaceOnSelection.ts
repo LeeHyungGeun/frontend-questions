@@ -1,3 +1,4 @@
+/* tslint:disable:no-any */
 function insertSpaceOnSelection(e: any, space: number = 4) {
     const selectionStart = e.target.selectionStart;
     const before = e.target.value.substring(0, selectionStart);
