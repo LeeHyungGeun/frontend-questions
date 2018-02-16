@@ -3,11 +3,14 @@ import {
     Question
 } from '../Models';
 import QuestionItem from '../Components/QuestionItem';
+import withLayout from './withLayout';
 
 type Props = {};
 type State = {
     question: Question
 };
+
+@withLayout
 class JavaScriptContainer extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
