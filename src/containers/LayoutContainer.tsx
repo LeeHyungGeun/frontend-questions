@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 
 class LayoutContainer extends React.Component {
     menus: Array<String> = [
+        'Editor',
         'JavaScript',
         'HTML',
         'CSS',
