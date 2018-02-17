@@ -5,8 +5,6 @@ import MarkdownEditor from './Markdown/MarkdownEditor';
 
 const StyledHeader = styled.menu`
     display: flex;
-    height: 3rem;
-    // background: #495057;
     background: #21252A;
     padding: 0;
     margin: 0;
@@ -30,10 +28,9 @@ const StyledDocumentTitle = styled.input`
     font-weight: 600;
     word-break: break-all;
 `;
-const StyledDocumentSubmitButtom = styled.button`
+const StyledDocumentSubmitButton = styled.button`
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
-    margin-left: 0.3rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
     font-weight: 600;
@@ -43,10 +40,29 @@ const StyledDocumentSubmitButtom = styled.button`
     outline: none;
     background: #333A40;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease;
 
     &:active {
         background: #495057;
+    }
+`;
+const StyledDocumentCancelButton = styled.button`
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    font-weight: 600;
+    user-select: none;
+    outline: none;
+    border: none;
+    color: rgb(73, 80, 87);
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+
+    &:active {
+        background: #E9ECEF;
     }
 `;
 
@@ -75,9 +91,12 @@ class Editor extends React.Component<Props, State> {
             <div>
                 <StyledHeader>
                     <StyledDocumentTitle />
-                    <StyledDocumentSubmitButtom tabIndex={-1}>
+                    <StyledDocumentSubmitButton tabIndex={-1}>
                         SUBMIT
-                    </StyledDocumentSubmitButtom>
+                    </StyledDocumentSubmitButton>
+                    <StyledDocumentCancelButton tabIndex={-1}>
+                        CANCEL
+                    </StyledDocumentCancelButton>
                 </StyledHeader>
                 <StyledEditor>
                     <MarkdownEditor
